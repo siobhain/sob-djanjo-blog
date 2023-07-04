@@ -1,1 +1,1 @@
-web: gunicorn sob-blog.wsgi
+web: gunicorn theblogproj.wsgi
