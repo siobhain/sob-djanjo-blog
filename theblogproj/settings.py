@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # ALLOWED_HOSTS = ['sob-blog.herokuapp.com', '8000-siobhain-sobdjanjoblog-kjqp31z4e1m.ws-eu101.gitpod.io']
-ALLOWED_HOSTS = ['sob-blog.herokuapp.com', '8000-siobhain-sobdjanjoblog-kjqp31z4e1m.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['sob-blog-0413f0fdf493.herokuapp.com', '8000-siobhain-sobdjanjoblog-kjqp31z4e1m.ws-eu101.gitpod.io']
 
 
 # Application definition
