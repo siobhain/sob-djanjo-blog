@@ -30,7 +30,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # ALLOWED_HOSTS = ['sob-blog.herokuapp.com', '8000-siobhain-sobdjanjoblog-kjqp31z4e1m.ws-eu101.gitpod.io']
 # ALLOWED_HOSTS = ['sob-blog-0413f0fdf493.herokuapp.com', 'localhost','8000-siobhain-sobdjanjoblog-kjqp31z4e1m.ws-eu101.gitpod.io', '8000-siobhain-sobdjanjoblog-rq1z869ke29.ws-eu101.gitpod.io']
@@ -78,6 +80,7 @@ MESSAGE_TAGS = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
